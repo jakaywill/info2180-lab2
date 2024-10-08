@@ -1,0 +1,108 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #2D3748;
+    margin: 0;
+    padding: 0;
+    background-color: #F7FAFC;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #48BB78;
+    font-size: 32px;
+}
+
+.post-meta {
+    color: #718096;
+}
+
+aside {
+    grid-area: sidebar;
+    padding: 20px;
+    background-color: #F7FAFC;
+}
+
+aside section {
+    margin-bottom: 20px;
+}
+
+aside h3 {
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.social-media h3,
+.archives h3 {
+    color: #48BB78;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+.about {
+    background-color: #E2E8F0;
+    padding: 10px;
+}
+
+.post-image {
+    width: 150px; 
+    height: auto; 
+    margin: 10px; 
+}
+
+.float-left {
+    float: left; 
+}
+
+.float-right {
+    float: right; 
+}
+
+
+article::after {
+    content: "";
+    display: table;
+    clear: both; 
+}
